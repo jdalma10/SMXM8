@@ -4,40 +4,42 @@ nav_order: 0
 ---
 
 # 📚 Apunts de Desenvolupament Web
-
 Benvingut/da als apunts del curs **HTML, CSS i JavaScript**.  
-Aquests documents estan pensats per introduir-te al desenvolupament web d’una manera clara i progressiva.
+Aquest lloc està creat amb *Just the Docs* per oferir una navegació clara i estructura organitzada.
 
 ---
 
-## 📘 Sessions disponibles
+## 🚀 Continguts del curs
 
-### **Sessió 1 — Introducció a HTML**
+### **1. HTML**
+Aprendrem els fonaments del llenguatge que estructura el web.
+
+🔗 **[Sessió 1 — Introducció a HTML](sessio1.md)**  
 Continguts:
-- Què és HTML?
-- Anatomia d’una etiqueta
-- Etiquetes bàsiques (títols, paràgrafs, enllaços, imatges, llistes…)
-- HTML Semàntic
-
-🔗 **[Accedir a la Sessió 1](sessio1.md)**
+- Què és HTML  
+- Anatomia d’una etiqueta  
+- Etiquetes bàsiques  
+- HTML semàntic  
 
 ---
 
-## 🗂️ Properes sessions (aviat!)
-Aquestes sessions s’aniran publicant a mesura que avancem:
+### ✨ Pròximes sessions
 
-- Sessió 2 — Introducció al CSS  
-- Sessió 3 — Selectors CSS  
-- Sessió 4 — Box Model  
-- Sessió 5 — Introducció a JavaScript  
-- ...
+- Sessió 2 — CSS: Introducció i estilització bàsica  
+- Sessió 3 — CSS: Selectors i Box Model  
+- Sessió 4 — JavaScript: Introducció  
+- Sessió 5 — JavaScript: Variables, funcions i esdeveniments  
+
+Aquestes pàgines es publicaran pròximament.
 
 ---
 
+## ℹ️ Sobre aquest projecte
+Aquests apunts estan escrits en **Markdown**, generats amb **GitHub Pages** i el tema **Just the Docs**.  
+Els continguts estan pensats per aprendre pas a pas amb exemples clars i pràctics.
 
-## 🧭 Navegació
-- **Inici** — aquesta pàgina  
-- **Sessió 1 — HTML bàsic**: [Obrir](sessio1.md)
+---
 
-
-
+## 🔗 Navegació
+- [Inici](index.md)
+- [Sessió 1](sessio1.md)
