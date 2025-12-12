@@ -1,0 +1,11 @@
+title: "Apunts de Desenvolupament Web"
+description: "HTML, CSS i JavaScript"
+theme: just-the-docs
+
+# Opcional: activem cerca
+plugins:
+  - jekyll-seo-tag
+
+# Navegació
+just-the-docs:
+  logo: ""
