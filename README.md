@@ -1,3 +1,8 @@
+---
+title: "Inici"
+nav_order: 0
+---
+
 # 📚 Apunts de Desenvolupament Web
 
 Benvingut/da als apunts del curs **HTML, CSS i JavaScript**.  
@@ -33,5 +38,6 @@ Aquestes sessions s’aniran publicant a mesura que avancem:
 ## 🧭 Navegació
 - **Inici** — aquesta pàgina  
 - **Sessió 1 — HTML bàsic**: [Obrir](sessio1.md)
+
 
 
