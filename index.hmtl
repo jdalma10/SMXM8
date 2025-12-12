@@ -1,11 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Basic HTML Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apunts HTML & CSS — 12 Sessions</title>
+    <link rel="stylesheet" href="estils.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a basic HTML sample page.</p>
+
+<header>
+    <h1>Apunts d’HTML i CSS — Curs de 12 Sessions</h1>
+    <p>Document interactiu i navegable per a l’aula</p>
+</header>
+
+<nav>
+    <h2>Índex</h2>
+    <ul>
+        <li><a href="#s1">Sessió 1 — Introducció i estructura</a></li>
+        <li><a href="#s2">Sessió 2 — Text i format</a></li>
+        <li><a href="#s3">Sessió 3 — Enllaços</a></li>
+        <li><a href="#s4">Sessió 4 — Imatges</a></li>
+        <li><a href="#s5">Sessió 5 — Llistes i semàntica</a></li>
+        <li><a href="#s6">Sessió 6 — Taules</a></li>
+        <li><a href="#s7">Sessió 7 — CSS i selectors</a></li>
+        <li><a href="#s8">Sessió 8 — Colors i fonts</a></li>
+        <li><a href="#s9">Sessió 9 — Box Model</a></li>
+        <li><a href="#s10">Sessió 10 — Flexbox</a></li>
+        <li><a href="#s11">Sessió 11 — Grid</a></li>
+        <li><a href="#s12">Sessió 12 — Publicació</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="s1">
+    <h2>Sessió 1 — Introducció al web i estructura HTML bàsica</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ca"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;El meu primer web&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hola món!&lt;/h1&gt;
+    &lt;p&gt;Aquest és el meu primer document HTML.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s2">
+    <h2>Sessió 2 — Text, paràgrafs i format</h2>
+    <pre><code>&lt;h1&gt;Títol principal&lt;/h1&gt;
+&lt;h2&gt;Subtítol&lt;/h2&gt;
+
+&lt;p&gt;Aquest és un &lt;strong&gt;paràgraf important&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Podem fer &lt;em&gt;cursiva&lt;/em&gt;, &lt;u&gt;subratllat&lt;/u&gt; i &lt;br&gt; fer salts de línia.&lt;/p&gt;
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s3">
+    <h2>Sessió 3 — Enllaços i navegació interna</h2>
+    <pre><code>&lt;a href="https://www.wikipedia.org" target="_blank"&gt;Visita Viquipèdia&lt;/a&gt;
+
+&lt;a href="#seccio1"&gt;Ves a la secció 1&lt;/a&gt;
+
+&lt;h2 id="seccio1"&gt;Secció 1&lt;/h2&gt;
+&lt;p&gt;Contingut de la secció.&lt;/p&gt;
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s4">
+    <h2>Sessió 4 — Imatges i atributs</h2>
+    <pre><code>&lt;img src="imatges/foto.jpg" alt="Foto de prova" width="300"&gt;
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s5">
+    <h2>Sessió 5 — Llistes i estructura semàntica HTML5</h2>
+    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Element A&lt;/li&gt;
+    &lt;li&gt;Element B&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Primer&lt;/li&gt;
+    &lt;li&gt;Segon&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;header&gt;&lt;h1&gt;Capçalera&lt;/h1&gt;&lt;/header&gt;
+&lt;nav&gt;Menú de navegació&lt;/nav&gt;
+&lt;main&gt;Contingut principal&lt;/main&gt;
+&lt;footer&gt;Peu de pàgina&lt;/footer&gt;
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s6">
+    <h2>Sessió 6 — Taules i organització de dades</h2>
+    <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nom&lt;/th&gt;&lt;th&gt;Edat&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Anna&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s7">
+    <h2>Sessió 7 — Introducció al CSS i selectors</h2>
+    <pre><code>&lt;link rel="stylesheet" href="estils.css"&gt;
+
+&lt;style&gt;
+    p { color: blue; }
+    #titol { font-size: 2rem; }
+    .destacat { background: yellow; }
+&lt;/style&gt;
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s8">
+    <h2>Sessió 8 — Colors, tipografies i unitats</h2>
+    <pre><code>body {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    color: rgb(200, 50, 50);
+}
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s9">
+    <h2>Sessió 9 — Box Model: marges, padding i bordes</h2>
+    <pre><code>.caixa {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s10">
+    <h2>Sessió 10 — Layout amb Flexbox</h2>
+    <pre><code>.container {
+    display: flex;
+    gap: 10px;
+}
+
+.container div {
+    flex: 1;
+    background: lightgray;
+}
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s11">
+    <h2>Sessió 11 — Layout amb Grid</h2>
+    <pre><code>.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+    </code></pre>
+    <a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+<section id="s12">
+    <h2>Sessió 12 — Publicació i estructura final del projecte</h2>
+<pre><code>projecte/
+│ index.html
+│ estils.css
+└─ imatges/
+</code></pre>
+
+<p>Opcions de publicació:</p>
+<ul>
+    <li>GitHub Pages</li>
+    <li>Netlify</li>
+    <li>Vercel</li>
+</ul>
+
+<a class="back" href="#top">Torna a l’índex</a>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 — Apunts HTML & CSS per a l’aula</p>
+</footer>
+
 </body>
 </html>
