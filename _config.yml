@@ -1,6 +1,6 @@
 title: "Apunts de Desenvolupament Web"
 description: "HTML, CSS i JavaScript"
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 # Opcional: activem cerca
 plugins:
