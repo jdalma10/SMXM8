@@ -1,140 +1,265 @@
-🧭 Sessió 1 — HTML bàsic i HTML semàntic
+📘 Apunts d’HTML i CSS
+
+Curs de 12 sessions — Document navegable en Markdown
+
+Índex
+
+Sessió 1 — Introducció al web i estructura HTML bàsica
+
+Sessió 2 — Text, paràgrafs i format
+
+Sessió 3 — Enllaços i navegació interna
+
+Sessió 4 — Imatges i atributs
+
+Sessió 5 — Llistes i estructura semàntica HTML5
+
+Sessió 6 — Taules i organització de dades
+
+Sessió 7 — Introducció al CSS i selectors
+
+Sessió 8 — Colors, tipografies i unitats
+
+Sessió 9 — Caixes (box-model), marges i padding
+
+Sessió 10 — Layout amb Flexbox
+
+Sessió 11 — Layout amb Grid
+
+Sessió 12 — Publicació i estructura final del projecte
+
+<a id="sessió-1"></a>⭐ Sessió 1 — Introducció al web i estructura HTML bàsica
 🎯 Objectius
 
-Entendre què és HTML i com s’estructura una pàgina web.
+Entendre què és HTML.
 
-Conèixer les etiquetes bàsiques (html, head, body, títols, paràgrafs…).
+Crear un primer document HTML correctament estructurat.
 
-Introduir l’HTML semàntic i la seva utilitat.
-
-Crear l’esquelet d’un lloc web que s’ampliarà a les següents sessions.
-
-📌 1. Estructura mínima d’un document HTML
-
-Tot document HTML5 comença així:
-
+📄 Contingut
 <!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Títol de la pàgina</title>
+    <title>El meu primer web</title>
 </head>
-
 <body>
-
+    <h1>Hola món!</h1>
+    <p>Aquest és el meu primer document HTML.</p>
 </body>
 </html>
 
-🔍 Què fa cada etiqueta?
+🧩 Tasca
 
-<!DOCTYPE html> → indica que és HTML5
+Crea un arxiu index.html amb aquesta estructura i obre'l al navegador.
 
-<html> → arrel del document
+➡️ Torna a l’índex
 
-<head> → informació per al navegador (metadades, títol, imports...)
+<a id="sessió-2"></a>✏️ Sessió 2 — Text, paràgrafs i format
+🎯 Objectius
 
-<title> → text que apareix a la pestanya del navegador
+Ús de títols h1–h6
 
-<body> → tot el contingut visible
+Paràgrafs, salts i etiquetes de format
 
-📌 2. Etiquetes bàsiques de contingut
-Títols
+📄 Contingut
 <h1>Títol principal</h1>
 <h2>Subtítol</h2>
 
-Paràgrafs i text enriquit
-<p>Això és un paràgraf.</p>
-<p><strong>Text en negreta</strong> i <em>cursiva</em>.</p>
+<p>Aquest és un <strong>paràgraf important</strong>.</p>
+<p>Podem fer <em>cursiva</em>, <u>subratllat</u> i <br> fer salts de línia.</p>
 
-Llistes
+🧩 Tasca
+
+Crear una pàgina amb com a mínim 3 nivells de títols i 3 paràgrafs formats.
+
+➡️ Torna a l’índex
+
+<a id="sessió-3"></a>🔗 Sessió 3 — Enllaços i navegació interna
+🎯 Objectius
+
+Enllaços externs i interns
+
+Ancoratges dins del mateix document
+
+📄 Contingut
+<a href="https://www.wikipedia.org" target="_blank">Visita Viquipèdia</a>
+
+<a href="#seccio1">Ves a la secció 1</a>
+
+<h2 id="seccio1">Secció 1</h2>
+<p>Contingut de la secció.</p>
+
+
+➡️ Torna a l’índex
+
+<a id="sessió-4"></a>🖼️ Sessió 4 — Imatges i atributs
+🎯 Objectius
+
+Afegir imatges
+
+Atributs alt, width, height
+
+📄 Contingut
+<img src="imatges/foto.jpg" alt="Foto de prova" width="300">
+
+
+➡️ Torna a l’índex
+
+<a id="sessió-5"></a>📚 Sessió 5 — Llistes i estructura semàntica HTML5
+🎯 Objectius
+
+Llistes ordenades i no ordenades
+
+ETIQUETES semàntiques (header, nav, main, footer)
+
+📄 Contingut
 <ul>
-    <li>Element 1</li>
-    <li>Element 2</li>
+    <li>Element A</li>
+    <li>Element B</li>
 </ul>
 
-📌 3. HTML semàntic
+<ol>
+    <li>Primer</li>
+    <li>Segon</li>
+</ol>
 
-Utilitzem etiquetes que descriuen el propòsit del contingut:
+<header><h1>Capçalera</h1></header>
+<nav>Menú de navegació</nav>
+<main>Contingut principal</main>
+<footer>Peu de pàgina</footer>
 
-header → capçalera
 
-nav → menú de navegació
+➡️ Torna a l’índex
 
-main → contingut principal
+<a id="sessió-6"></a>📊 Sessió 6 — Taules i organització de dades
+🎯 Objectius
 
-section → secció temàtica
+Construir taules
 
-article → contingut independent
+Fusionar cel·les
 
-aside → informació complementària
+📄 Contingut
+<table border="1">
+    <tr>
+        <th>Nom</th><th>Edat</th>
+    </tr>
+    <tr>
+        <td>Anna</td><td>20</td>
+    </tr>
+</table>
 
-footer → peu de pàgina
 
-Exemple complet dins del <body>
-<body>
-    <header>
-        <h1>El meu lloc web</h1>
-    </header>
+➡️ Torna a l’índex
 
-    <nav>
-        <ul>
-            <li>Inici</li>
-            <li>Articles</li>
-            <li>Contacte</li>
-        </ul>
-    </nav>
+<a id="sessió-7"></a>🎨 Sessió 7 — Introducció al CSS i selectors
+🎯 Objectius
 
-    <main>
-        <section>
-            <h2>Benvinguda</h2>
-            <p>Text introductori de la secció principal.</p>
-        </section>
+Afegir CSS intern i extern
 
-        <article>
-            <h3>Títol d'un article</h3>
-            <p>Primer paràgraf de l'article.</p>
-            <p>Segon paràgraf de l'article.</p>
-        </article>
-    </main>
+Selectors bàsics
 
-    <aside>
-        <p>Informació complementària.</p>
-    </aside>
+📄 Contingut
+<link rel="stylesheet" href="estils.css">
 
-    <footer>
-        <p>&copy; 2025 El meu lloc web</p>
-    </footer>
-</body>
+<style>
+    p { color: blue; }
+    #titol { font-size: 2rem; }
+    .destacat { background: yellow; }
+</style>
 
-📝 Activitat de la sessió
 
-Crea un fitxer index.html amb:
+➡️ Torna a l’índex
 
-L’estructura HTML5 completa
+<a id="sessió-8"></a>🌈 Sessió 8 — Colors, tipografies i unitats
+🎯 Objectius
 
-Un <header> amb el títol del web
+Colors (nom, hex, rgb)
 
-Un <nav> amb una llista (encara sense enllaços)
+Tipografies i mides
 
-Un <main> amb:
+📄 Contingut
+body {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
 
-Una <section> amb títol i paràgraf
+h1 {
+    color: rgb(200, 50, 50);
+}
 
-Un <article> amb dos o tres paràgrafs
 
-Un <aside> amb informació secundària
+➡️ Torna a l’índex
 
-Un <footer> simple
+<a id="sessió-9"></a>📦 Sessió 9 — Box Model: marges, padding i bordes
+🎯 Objectius
 
-Aquest serà l’esquelet base del teu projecte web per a tot el curs.
+Entendre com funciona el model de capses
 
-✅ Resultat final de la sessió
+📄 Contingut
+.caixa {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
 
-Els alumnes acaben amb una pàgina HTML:
 
-Correctament estructurada
+➡️ Torna a l’índex
 
-Semàntica
+<a id="sessió-10"></a>🧱 Sessió 10 — Layout amb Flexbox
+🎯 Objectius
 
-Llesta per afegir imatges, enllaços i navegació real a la Sessió 2
+Crear dissenys flexibles
+
+📄 Contingut
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.container div {
+    flex: 1;
+    background: lightgray;
+}
+
+
+➡️ Torna a l’índex
+
+<a id="sessió-11"></a>🔲 Sessió 11 — Layout amb CSS Grid
+🎯 Objectius
+
+Crear graelles avançades
+
+📄 Contingut
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+➡️ Torna a l’índex
+
+<a id="sessió-12"></a>🚀 Sessió 12 — Publicació i estructura final del projecte
+🎯 Objectius
+
+Organitzar un projecte complet
+
+Preparar-lo per publicar-lo
+
+📁 Estructura recomanada
+projecte/
+│ index.html
+│ estils.css
+└─ imatges/
+
+🌐 Publicació
+
+GitHub Pages
+
+Netlify
+
+Vercel
+
+➡️ Torna a l’índex
