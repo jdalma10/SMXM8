@@ -1,0 +1,29 @@
+1️⃣ Què és l’HTML semàntic?
+
+Explicació curta:
+
+HTML semàntic significa utilitzar etiquetes que descriuen el significat del contingut, no només l’aspecte visual.
+
+❌ No semàntic:
+
+<div>
+  <div>Menú</div>
+  <div>Contingut principal</div>
+  <div>Peu de pàgina</div>
+</div>
+
+
+✅ Semàntic:
+
+<header>Menú</header>
+<main>Contingut principal</main>
+<footer>Peu de pàgina</footer>
+
+
+💡 Avantatges:
+
+Millor per a accessibilitat
+
+Millor per a cercadors (SEO)
+
+Codi més clar i professional
