@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exemple HTML semàntic amb Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        background: #f6f7fb;
+        color: #1f2937;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background: #111827;
+        color: #fff;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: #e5e7eb;
+        text-decoration: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+        background: #1f2937;
+      }
+
+      .layout {
+        flex: 1;
+        display: flex;
+        gap: 16px;
+        padding: 16px 24px;
+      }
+
+      main {
+        flex: 3;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      section,
+      article,
+      aside {
+        background: #fff;
+        border-radius: 10px;
+        padding: 16px;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      }
+
+      section,
+      article {
+        flex: 1 1 240px;
+      }
+
+      aside {
+        flex: 1;
+        min-width: 200px;
+        max-width: 260px;
+      }
+
+      footer {
+        background: #111827;
+        color: #e5e7eb;
+        text-align: center;
+        padding: 12px 16px;
+      }
+
+      @media (max-width: 800px) {
+        .layout {
+          flex-direction: column;
+        }
+
+        aside {
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>El meu web</h1>
+      <nav>
+        <a href="#">Inici</a>
+        <a href="#">Sobre mi</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <main>
+        <section>
+          <h2>Sobre mi</h2>
+          <p>Sóc estudiant de web.</p>
+        </section>
+
+        <article>
+          <h2>El meu hobby</h2>
+          <p>M’agrada programar.</p>
+        </article>
+      </main>
+
+      <aside>
+        <p>Notícies ràpides</p>
+      </aside>
+    </div>
+
+    <footer>
+      <p>© 2026 El meu nom</p>
+    </footer>
+  </body>
+</html>
