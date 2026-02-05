@@ -1,0 +1,83 @@
+1️⃣ Què és l’HTML semàntic?
+
+Explicació curta:
+
+HTML semàntic significa utilitzar etiquetes que descriuen el significat del contingut, no només l’aspecte visual.
+
+❌ No semàntic:
+
+<div>
+  <div>Menú</div>
+  <div>Contingut principal</div>
+  <div>Peu de pàgina</div>
+</div>
+
+
+✅ Semàntic:
+
+<header>Menú</header>
+<main>Contingut principal</main>
+<footer>Peu de pàgina</footer>
+
+
+💡 Avantatges:
+
+Millor per a accessibilitat
+Millor per a cercadors (SEO)
+Codi més clar i professional
+
+
+
+2️⃣ Principals etiquetes semàntiques (15 min)
+
+Explica-les amb exemples:
+
+Etiqueta	Per a què serveix
+<header>	Capçalera del web
+<nav>	Menú de navegació
+<main>	Contingut principal
+<section>	Seccions temàtiques
+<article>	Contingut independent
+<aside>	Barra lateral
+<footer>	Peu de pàgina
+
+
+3️⃣ Exemple complet (15 min)
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pàgina Semàntica</title>
+</head>
+<body>
+
+<header>
+  <h1>El meu web</h1>
+  <nav>
+    <a href="#">Inici</a>
+    <a href="#">Sobre mi</a>
+    <a href="#">Contacte</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Qui soc</h2>
+    <p>Sóc estudiant de programació web.</p>
+  </section>
+
+  <article>
+    <h2>El meu primer article</h2>
+    <p>Aquest és un text independent.</p>
+  </article>
+</main>
+
+<aside>
+  <p>Notícies ràpides</p>
+</aside>
+
+<footer>
+  <p>© 2026 El meu web</p>
+</footer>
+
+</body>
+</html>
